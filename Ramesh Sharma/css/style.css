@@ -1501,6 +1501,12 @@ body .symp-btn{
 	.portfolio-items > .item{
 		width:100%;
 	}
+	.portfolio-block > .container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
 .portfolio-items > .item > .inner > img{
 	width:100%;

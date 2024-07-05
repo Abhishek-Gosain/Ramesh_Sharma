@@ -1507,6 +1507,11 @@ body .symp-btn{
 		justify-content: center;
 		align-items: center;
 	}
+	div.gallery {
+		margin: 5px;
+		border: 1px solid #ccc;
+		width: 90% !important;
+		}
 }
 .portfolio-items > .item > .inner > img{
 	width:100%;

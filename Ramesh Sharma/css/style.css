@@ -1488,13 +1488,20 @@ body .symp-btn{
 .portfolio-block .section-header{
 	margin-bottom:45px;
 }
+.portfolio-section{
+	display: block;
+	margin: auto;
+	scrollbar-gutter: stable both-edges;
+}
 .portfolio-block > .container {
 	display:flex;
 	flex-direction: column;
 }
 .portfolio-block  > .container > .flexing{
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
+	align-items: center;
+	justify-content: center;
 }
 .portfolio-items > .item{
 	width:33.333%;

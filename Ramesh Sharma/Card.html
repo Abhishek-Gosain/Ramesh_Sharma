@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Screen Images</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: auto;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%; /* Full viewport height */
+            width: 100%; /* Full viewport width */
+            overflow: hidden;
+        }
+        @media screen and (max-width: 480px) {
+            .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20%; /* Full viewport height */
+            width: 100%; /* Full viewport width */
+            overflow: hidden;
+        }
+        }
+        img {
+            height: 100%; /* Make each image take up the entire height */
+            width: 100%;  /* Make each image take up the entire width */
+            object-fit: cover; /* Ensures the image covers the whole screen without distortion */
+            object-position: center; /* Keeps the image centered */
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://raw.githubusercontent.com/Abhishek-Gosain/Ramesh_Sharma/refs/heads/main/1.png" alt="Image 1" id="image" onclick="toggle()">
+    </div>
+    
+    <!-- <div class="image-container">
+        <img src="https://raw.githubusercontent.com/Abhishek-Gosain/Ramesh_Sharma/refs/heads/main/2.png" alt="Image 2">
+    </div> -->
+    <script>
+         let currentImageIndex = 0;
+        const images = [
+            "https://raw.githubusercontent.com/Abhishek-Gosain/Ramesh_Sharma/refs/heads/main/1.png",
+            "https://raw.githubusercontent.com/Abhishek-Gosain/Ramesh_Sharma/refs/heads/main/2.png"
+        ]
+
+        function toggle() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.getElementById('image').src = images[currentImageIndex];
+        }
+    </script>
+</body>
+</html>

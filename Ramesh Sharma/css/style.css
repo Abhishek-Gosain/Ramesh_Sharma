@@ -438,7 +438,7 @@ body.section-show .transition-mask:before{
 
 .front-section{
 	padding-top:60px;
-	padding-bottom:200px;
+/* 	padding-bottom:200px; */
 	position:relative;
 }
 .front-heading{
